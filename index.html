@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="imgSvg">
+  <img class="svg" src="medicalSvg.svg" alt="Medico">
+</div>
+    <div id="div-container">
+      
+    <h1 class="tituloPagina">Calculadora de IMC</h1>
+    <div id="form">
+    <p class="alturaLabel">Altura</p>
+       <input type="number" class="inputs" id="altura" placeholder="Ex: 1.70" step="0.01" data-validation-interval="[1,119]" data-validations="type internal required" required>   
+    <p class="alturaLabel">Peso</p>
+    <input type="number" class="inputs" id="peso" placeholder="Ex: 70" data-validation-interval="1-350" data-validations="type internal required" required/>
+    <div class="botao">
+            <input type="submit" value="Calcular" id="calcular">
+          </div>
+    <p id="mensagem"></p>
+    
+    <p id="erro"></p>
+    <p id="mensagemPeso"></p>
+  </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
