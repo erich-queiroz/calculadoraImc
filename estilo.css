@@ -22,12 +22,10 @@ body {
     border-radius: 10px;
 }
 #form {
-    
     flex-direction:column ;
 }
 .tituloPagina, .alturaLabel {
     margin: 10px 10px;
-
     text-align: center;
 }
 #calcular {
@@ -59,11 +57,33 @@ body {
 }
 .imgSvg {
     display: contents;
-    
 }
 .svg {
     position: absolute;
     margin: 100px;
-    /* margin-left: 260px; */
-    /* width: 500px;*/
+}
+
+@media (max-width: 455px) {
+    #div-container {
+        width: 95%;
+        height: auto;
+    }
+    .svg {
+        display: none;
+    }
+    .imgSvg {
+        display: contents;
+    }
+}
+@media (max-width: 600px) {
+    #div-container {
+        width: 95%;
+        height: auto;
+    }
+    .svg {
+        display: none;
+    }
+    .imgSvg {
+        display: inline-block;
+    }
 }
